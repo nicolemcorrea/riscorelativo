@@ -42,7 +42,7 @@ Avaliação do Modelo de score creditício: avaliado utilizando o modelo de matr
 Modelagem Estatística: foi realizada a regressão logística para verificar de forma preditiva o risco de inadimplência.
 . 
 Visualização de Dados: através de dashboards interativos no Looker Studio. 
-
+</details>
 
 <details>
   <summary><strong style="font-size: 16px;">Ferramentas e Tecnologias</strong></summary>
@@ -91,3 +91,4 @@ Além disso, indica-se ao banco manter um processo contínuo de desenvolvimento 
 Por fim, assegurar a transparência dos critérios de concessão de crédito aos clientes, fortalecendo a confiança e facilitando a compreensão das expectativas do banco quanto ao pagamento.
   
 </details>
+
