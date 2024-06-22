@@ -15,9 +15,11 @@ Para resolver essa questão, sugeriu-se a automatização do processo de anális
 O objetivo deste projeto foi desenvolver um score de crédito utilizando uma análise de dados e a avaliação do risco relativo, capaz de classificar os clientes em diversas categorias de risco com base na probabilidade de inadimplência. Essa classificação dará subsidios para o banco tomar decisões mais precisas sobre a concessão de crédito, diminuindo o risco de não pagamento de empréstimos. Além disso, a inclusão da métrica existente de pagamentos atrasados aumenta a capacidade do modelo de identificar riscos.
 
 Além disso, foram levantadas as seguintes hipóteses a serem respondidas:
-Os mais jovens têm um maior risco de inadimplência;
-As pessoas com maior quantidade de empréstimos ativos têm maior risco de serem maus pagadores;
-As pessoas que atrasam seus pagamentos por mais de 90 dias têm maior risco de serem maus pagadores.
+
+- Os mais jovens têm um maior risco de inadimplência;
+- As pessoas com maior quantidade de empréstimos ativos têm maior risco de serem maus pagadores;
+- As pessoas que atrasam seus pagamentos por mais de 90 dias têm maior risco de serem maus pagadores.
+- 
 </details>
 
 <details>
@@ -25,10 +27,10 @@ As pessoas que atrasam seus pagamentos por mais de 90 dias têm maior risco de s
 
 Foram utilizadas como fonte de dados as tabelas a seguir:
 
-- user_info: dados gerais dos usuários, como idade, sexo, salário e número de dependentes.
-- default: dados dos clientes com uma variável (default_flag) para identificar usuários inadimplentes.
-- loans_detail: dados sobre o número de atrasos de pagamento de empréstimos em relação ao tempo, a taxa de endividamento e uso de linhas de crédito e relação ao seu limite.
-- loans_outstanding: Dados sobre a quantidade e tipos de empréstimos por cliente.
+- **user_info**: dados gerais dos usuários, como idade, sexo, salário e número de dependentes.
+- **default**: dados dos clientes com uma variável (default_flag) para identificar usuários inadimplentes.
+- **loans_detail**: dados sobre o número de atrasos de pagamento de empréstimos em relação ao tempo, a taxa de endividamento e uso de linhas de crédito e relação ao seu limite.
+- **loans_outstanding**: Dados sobre a quantidade e tipos de empréstimos por cliente.
 
 </details>
 
@@ -37,10 +39,10 @@ Foram utilizadas como fonte de dados as tabelas a seguir:
 
 - ETL (Extract, Transform, Load): através de consultas realizadas no ambiente BigQuery, foram realizadas as etapas de limpeza e transformação dos dados inconsistentes, o cálculo de quartis, a segmentação de clientes e a determinação do risco relativo. Também se realizou a conversão de variáveis categóricas em dummy e a classificação de variáveis dummy em um score para bons e maus pagadores;
 
-- Avaliação do Modelo de score creditício: avaliado utilizando o modelo de matriz de confusão 
+- Avaliação do Modelo de score creditício: avaliado utilizando o modelo de matriz de confusão. 
 
 - Modelagem Estatística: foi realizada a regressão logística para verificar de forma preditiva o risco de inadimplência.
-. 
+ 
 - Visualização de Dados: através de dashboards interativos no Looker Studio.
   
 </details>
