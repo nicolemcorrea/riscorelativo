@@ -25,23 +25,24 @@ As pessoas que atrasam seus pagamentos por mais de 90 dias têm maior risco de s
 
 Foram utilizadas como fonte de dados as tabelas a seguir:
 
-user_info: dados gerais dos usuários, como idade, sexo, salário e número de dependentes; 
-default: dados dos clientes com uma variável (default_flag) para identificar usuários inadimplentes;
-loans_detail: dados sobre o número de atrasos de pagamento de empréstimos em relação ao tempo, a taxa de endividamento e uso de linhas de crédito e relação ao seu limite; 
-loans_outstanding: Dados sobre a quantidade e tipos de empréstimos por cliente.
+- user_info: dados gerais dos usuários, como idade, sexo, salário e número de dependentes.
+- default: dados dos clientes com uma variável (default_flag) para identificar usuários inadimplentes.
+- loans_detail: dados sobre o número de atrasos de pagamento de empréstimos em relação ao tempo, a taxa de endividamento e uso de linhas de crédito e relação ao seu limite.
+- loans_outstanding: Dados sobre a quantidade e tipos de empréstimos por cliente.
 
 </details>
 
 <details>
  <summary><strong style="font-size: 16px;">Processo e Técnicas de Análise</strong></summary>
 
-ETL (Extract, Transform, Load): através de consultas realizadas no ambiente BigQuery, foram realizadas as etapas de limpeza e transformação dos dados inconsistentes, o cálculo de quartis, a segmentação de clientes e a determinação do risco relativo. Também se realizou a conversão de variáveis categóricas em dummy e a classificação de variáveis dummy em um score para bons e maus pagadores;
+- ETL (Extract, Transform, Load): através de consultas realizadas no ambiente BigQuery, foram realizadas as etapas de limpeza e transformação dos dados inconsistentes, o cálculo de quartis, a segmentação de clientes e a determinação do risco relativo. Também se realizou a conversão de variáveis categóricas em dummy e a classificação de variáveis dummy em um score para bons e maus pagadores;
 
-Avaliação do Modelo de score creditício: avaliado utilizando o modelo de matriz de confusão 
+- Avaliação do Modelo de score creditício: avaliado utilizando o modelo de matriz de confusão 
 
-Modelagem Estatística: foi realizada a regressão logística para verificar de forma preditiva o risco de inadimplência.
+- Modelagem Estatística: foi realizada a regressão logística para verificar de forma preditiva o risco de inadimplência.
 . 
-Visualização de Dados: através de dashboards interativos no Looker Studio. 
+- Visualização de Dados: através de dashboards interativos no Looker Studio.
+  
 </details>
 
 <details>
