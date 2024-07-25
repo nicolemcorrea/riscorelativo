@@ -95,3 +95,8 @@ Por fim, assegurar a transparência dos critérios de concessão de crédito aos
   
 </details>
 
+## Dashboard
+
+![Dashboard Banco Super Caja](https://raw.githubusercontent.com/nicolemcorrea/riscorelativo/main/dashboard.png)
+![Risco Relativo](https://raw.githubusercontent.com/nicolemcorrea/riscorelativo/main/risco_relativo.png)
+
